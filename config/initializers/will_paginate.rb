@@ -23,7 +23,7 @@ module WillPaginate
       end
 
       def page_number(page)
-        tag :li, link(page, page, :rel => rel_value(page)), :class => ('active' if page == current_page)
+        tag :li, link(page, page, :rel => rel_value(page), :class => 'page-link'), :class => (page == current_page ? 'active page-item' : 'page-item')
       end
 
       def gap
