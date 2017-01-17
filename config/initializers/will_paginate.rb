@@ -27,7 +27,7 @@ module WillPaginate
       end
 
       def gap
-        tag :li, link('&hellip;'.html_safe, '#'), :class => 'disabled'
+        tag :li, link('&hellip;'.html_safe, '#'), :class => 'disabled page-item'
       end
 
       def previous_or_next_page(page, text, classname)
